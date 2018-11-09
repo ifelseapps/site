@@ -32,7 +32,8 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
-assets/
+assets/scripts.min.js
+assets/styles.min.js
 
 # Dependency directories
 node_modules/
