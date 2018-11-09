@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const extractPlugin = new MiniCssExtractPlugin({
   filename: '../assets/styles.min.css'
@@ -14,6 +15,7 @@ const optimizePlugin = new OptimizeCssAssetsPlugin({
   },
   canPrint: true
 });
+const uglifyPlugin = new UglifyJsPlugin();
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -73,8 +75,9 @@ module.exports = (env, argv) => {
       ...(isProduction ? [extractPlugin] : []),
     ],
     optimization: {
+      minimize: true,
       minimizer: [
-        ...(isProduction ? [optimizePlugin] : []),
+        ...(isProduction ? [optimizePlugin, uglifyPlugin] : []),
       ]
     }
   };
