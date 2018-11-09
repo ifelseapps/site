@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="">
   <link rel="stylesheet" href="assets/styles.min.css">
   <title>Максим Павлов - frontend разработчик</title>
 </head>
-<body class="page">
-  <div class="page__content">
-    <h1 class="page__title">Давайте знакомиться!</h1>
-    <p>Меня зовут Максим. Мне 29&nbsp;лет, я&nbsp;frontend-разработчик. Моя работа находится на&nbsp;стыке программирования и&nbsp;дизайна. Я&nbsp;разрабатываю веб-интерфейсы, которыми пользуются тысячи людей. Frontend&nbsp;&mdash; это мой осознанный выбор после нескольких лет fullstack разработки. Благодаря этому опыту я&nbsp;хорошо понимаю весь процесс разработки веб-приложения. Кроме того, я&nbsp;бывший project manager. Мне даже довелось управлять небольшой веб-студией.</p>
-    <p>Я&nbsp;очень общительный человек. В&nbsp;свободное время люблю путешествовать вместе с&nbsp;моей семьей. Изучаю иврит и&nbsp;английский, интересуюсь историей.</p>
+<body>
+  <div class="page">
+    <span class="page__content">
+      <header class="page-header page__header">
+        <h1 class="page-header__name">Максим Павлов</h1>
+        <label class="theme-switcher page-header__theme-switcher">
+          <span class="theme-switcher__back">
+            <input type="checkbox" class="js-theme-toggler visually-hidden theme-switcher__checkbox">
+            <span class="theme-switcher__toggler"></span>
+          </span>
+          <span class="theme-switcher__title">Включить темную тему</span>
+        </label>
+      </header>
+      <main>
+        <section class="page__section">
+            <h2 class="page__title page__title--level-1">Давайте знакомиться!</h2>
+            <p>Меня зовут Максим. Мне 29&nbsp;лет, я&nbsp;frontend-разработчик. Моя работа находится на&nbsp;стыке программирования и&nbsp;дизайна. Я&nbsp;разрабатываю веб-интерфейсы, которыми пользуются тысячи людей. Frontend&nbsp;&mdash; это мой осознанный выбор после нескольких лет fullstack разработки. Благодаря этому опыту я&nbsp;хорошо понимаю весь процесс разработки веб-приложения. Кроме того, я&nbsp;бывший project manager. Мне даже довелось управлять небольшой веб-студией.</p>
+            <p>Я&nbsp;очень общительный человек. В&nbsp;свободное время люблю путешествовать вместе с&nbsp;моей семьей. Изучаю иврит и&nbsp;английский, интересуюсь историей.</p>
+        </section>
+        <section class="page__section">
+            <h2 class="page__title page__title--level-2">Навыки и технологии</h2>
+            <p>Мои самые сильные скиллы - верстка и JavaScript.</p>
+            <p>Сверстаю макет любой сложности: семантично, кроссбраузерно и адаптивно. Есть опыт поддержки старых браузеров (Internet Explorer 8+, Android 4.2+). Применяю на практике подходы <em>progressive enhancement</em> и <em>graceful degradation</em>. Умею писать модульный CSS, который легко поддерживать и масштабировать. Я адепт <em>БЭМ</em>. Использую не только стиль наименования классов, но и саму методологию, которая помогает декомпозировать интерфейс (разделить на мелкие блоки, пригодные для переиспользования).</p>
+            <p>Я понимаю механизмы работы браузера, что помогает мне оптимизировать работу клиентской части приложения. Люблю создавать крутые CSS-анимации.</p>
+            <p>Уделяю внимание доступности интерфейсов (работать с интерфейсом должно быть удобно даже людям с ограниченными возможностями).</p>
+            <p>Мне нравится JavaScript. Я считаю его очень лаконичным и выразительным языком программирования. Пишу его в браузере и на сервере. Любимый фреймворк - ReactJs. Но я считаю, что технологии должны подбираться в зависимости от сложности и потребностей проекта. Например, данный сайт написан на ванильном html, css и javascript.</p>
+            <h3 class="page__title page__title--level-3">Список технологий и инструментов</h3>
+            <ul class="techs">
+              <li class="techs__item">JavaScript (ES5, ES6)</li>
+              <li class="techs__item">TypeScript</li>
+              <li class="techs__item">React.js</li>
+              <li class="techs__item">Vue.js</li>
+              <li class="techs__item">jQuery</li>
+              <li class="techs__item">Lodash</li>
+              <li class="techs__item">Html</li>
+              <li class="techs__item">Css</li>
+              <li class="techs__item">Pug</li>
+              <li class="techs__item">PostCSS</li>
+              <li class="techs__item">Sass/Less/Stylus</li>
+              <li class="techs__item">Webpack</li>
+              <li class="techs__item">Gulp</li>
+              <li class="techs__item">Svg</li>
+              <li class="techs__item">БЭМ</li>
+              <li class="techs__item">Node.js</li>
+              <li class="techs__item">Express.js</li>
+              <li class="techs__item">Php</li>
+              <li class="techs__item">MySQL</li>
+              <li class="techs__item">Битрикс</li>
+              <li class="techs__item">Git</li>
+              <li class="techs__item">Linux</li>
+            </ul>
+        </section>
+      </main>
+    </div>
   </div>
   <script src="assets/scripts.min.js"></script>
 </body>
