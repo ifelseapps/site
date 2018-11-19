@@ -1,4 +1,4 @@
-import './styles.css';
+import './bundle.css';
 
 const customPropertiesSupports = window.CSS && window.CSS.supports('--test-property', 0);
 const themeToggler = document.querySelector('.js-theme-toggler');

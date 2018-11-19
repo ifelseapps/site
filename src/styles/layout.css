@@ -1,0 +1,105 @@
+html {
+  font-family: 'PT Sans', sans-serif;
+  font-size: calc(16px + 0.25vw);
+  line-height: 1.5em;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--theme-background);
+  color: var(--theme-text-color);
+  overflow-x: hidden;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.title {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1em;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+}
+
+.title--level-1 {
+  font-size: 2rem;
+}
+
+.title--level-2 {
+  font-size: 1.5rem;
+}
+
+.title--level-3 {
+  font-size: 1.1rem;
+}
+
+.title--accent {
+  color: var(--theme-accent-color);
+}
+
+.link {
+  color: var(--theme-link-color);
+}
+
+.accent-block {
+  border-top: solid 5px var(--theme-accent-color);
+  background: var(--theme-substrate-background);
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.page__section {
+  margin: 4em 0;
+}
+
+.page__section--full-width {
+  margin: 4em -5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.page__title {
+  margin: 0 0 0.5em;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.page-header__name {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.page-header__theme-switcher {
+  margin-left: 20px;
+}

@@ -56,6 +56,9 @@ module.exports = (env, argv) => {
                   require('autoprefixer'),
                   require('css-mqpacker'),
                   require('postcss-custom-properties'),
+                  require('postcss-import')({
+                    root: 'src/'
+                  }),
                   require('postcss-custom-media')({
                     extensions: {
                       '--phone': '(min-width: 320px)',
