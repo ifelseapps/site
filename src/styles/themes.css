@@ -1,7 +1,7 @@
 :root {
   --theme-background: #fff;
-  --theme-text-color: #424242;
-  --theme-accent-color: #D81B60;
+  --theme-text-color: #212121;
+  --theme-accent-color: #4c32ff;
   --theme-link-color: var(--theme-accent-color);
   --theme-substrate-background: #fafafa;
   --theme-toggler-back: #BDBDBD;
@@ -10,7 +10,7 @@
 .theme-dark {
   --theme-background: #212121;
   --theme-text-color: #F5F5F5;
-  --theme-accent-color: #FFC107;
+  --theme-accent-color: #FDD835;
   --theme-substrate-background: var(--theme-background);
   --theme-toggler-back: #fff;
   --theme-techs-text-color: #424242;

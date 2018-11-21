@@ -55,10 +55,6 @@ module.exports = (env, argv) => {
                 plugins: [
                   require('autoprefixer'),
                   require('css-mqpacker'),
-                  require('postcss-custom-properties'),
-                  require('postcss-import')({
-                    root: 'src/'
-                  }),
                   require('postcss-custom-media')({
                     extensions: {
                       '--phone': '(min-width: 320px)',
@@ -66,7 +62,10 @@ module.exports = (env, argv) => {
                       '--desktop': '(min-width: 1024px)',
                       '--large': '(min-width: 1200px)'
                     }
-                  })
+                  }),
+                  require('postcss-import')({
+                    root: 'src/'
+                  }),
                 ]
               }
             }
