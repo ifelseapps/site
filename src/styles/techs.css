@@ -11,8 +11,9 @@
 .techs__item {
   margin: 0 15px 15px 0;
   padding: 10px 20px;
+  border: solid 2px transparent;
   border-radius: 20px;
   background: #fff;
   color: var(--theme-techs-text-color);
-  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.05);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.07);
 }
