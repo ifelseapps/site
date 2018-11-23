@@ -20,29 +20,58 @@
 .theme-switcher__back {
   position: relative;
   flex: none;
-  width: 32px;
-  height: 20px;
+  width: 60px;
+  height: 30px;
   border-radius: 20px;
   background: var(--theme-toggler-back);
 }
 
+.theme-switcher__back::before,
+.theme-switcher__back::after {
+  position: absolute;
+  content: '';
+  top: 4px;
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.theme-switcher__back::before {
+  left: 4px;
+  background-image: url(/assets/images/sunny.svg);
+}
+
+.theme-switcher__back::after {
+  right: 4px;
+  background-image: url(/assets/images/moon.svg);
+}
+
 .theme-switcher__toggler {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 16px;
-  height: 16px;
+  top: 4px;
+  left: 4px;
+  width: 23px;
+  height: 23px;
   margin: 0;
   padding: 0;
   border-radius: 100%;
-  background: #212121;
-  transition: transform 0.3s;
+  background: #FAFAFA;
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+  transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 1;
+}
+
+.theme-switcher--animation-off .theme-switcher__toggler {
+  transition: none;
 }
 
 .theme-switcher__checkbox:checked + .theme-switcher__toggler {
-  transform: translate3d(12px, 0, 0);
+  transform: translate3d(29px, 0, 0);
 }
 
 .theme-switcher__checkbox:focus + .theme-switcher__toggler {
-  background: #757575;
+  /* background: #757575; */
 }

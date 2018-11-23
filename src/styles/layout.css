@@ -30,7 +30,7 @@ p {
 }
 
 .title {
-  margin: 0 0 0.5em;
+  margin: 0;
   font-family: 'Fira Sans', sans-serif;
   line-height: 1em;
   letter-spacing: 0.025em;
@@ -145,6 +145,7 @@ p {
 
 .page-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
 }
@@ -156,10 +157,6 @@ p {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.page-header__theme-switcher {
-  margin-left: 20px;
 }
 
 .about-block {
