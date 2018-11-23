@@ -5,6 +5,7 @@
   --theme-link-color: var(--theme-accent-color);
   --theme-substrate-background: #fafafa;
   --theme-toggler-back: #42A5F5;
+  --theme-focus-color: #8C9EFF;
 }
 
 .theme-dark {
@@ -14,4 +15,5 @@
   --theme-substrate-background: var(--theme-background);
   --theme-toggler-back: #1f61c5;
   --theme-techs-text-color: #424242;
+  --theme-focus-color: #FFE082;
 }

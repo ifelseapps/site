@@ -26,6 +26,11 @@
   background: var(--theme-toggler-back);
 }
 
+.theme-switcher:focus-within .theme-switcher__back {
+  outline: none;
+  box-shadow: 0 0 0 5px var(--theme-focus-color);
+}
+
 .theme-switcher__back::before,
 .theme-switcher__back::after {
   position: absolute;

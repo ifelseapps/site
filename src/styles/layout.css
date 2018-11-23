@@ -19,6 +19,11 @@ p {
   margin: 1em 0;
 }
 
+::selection {
+  background-color: var(--theme-accent-color);
+  color: var(--theme-background);
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
@@ -60,6 +65,11 @@ p {
   border-color: transparent;
 }
 
+.link:focus {
+  outline: none;
+  color: var(--theme-focus-color);
+}
+
 .link--size-lg {
   font-size: 1.6rem;
 }
@@ -83,6 +93,11 @@ p {
 .button:hover {
   background: transparent;
   color: var(--theme-accent-color);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px var(--theme-focus-color);
 }
 
 .button__icon {
@@ -147,7 +162,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 80px;
 }
 
 .page-header__name {
