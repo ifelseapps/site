@@ -63,7 +63,7 @@
   margin: 0;
   padding: 0;
   border-radius: 100%;
-  background: #FAFAFA;
+  background: var(--theme-toggler-color);
   box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
   transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1);
   z-index: 1;
@@ -78,5 +78,9 @@
 }
 
 .theme-switcher__checkbox:focus + .theme-switcher__toggler {
-  /* background: #757575; */
+  background: var(--theme-focus-color);
+}
+
+.theme-switcher:focus-within .theme-switcher__checkbox:focus + .theme-switcher__toggler {
+  background: var(--theme-toggler-color);
 }

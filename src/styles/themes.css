@@ -4,7 +4,8 @@
   --theme-accent-color: #4c32ff;
   --theme-link-color: var(--theme-accent-color);
   --theme-substrate-background: #fafafa;
-  --theme-toggler-back: #42A5F5;
+  --theme-toggler-color: #FAFAFA;
+  --theme-toggler-back: #1f61c5;
   --theme-focus-color: #8C9EFF;
 }
 
@@ -13,7 +14,7 @@
   --theme-text-color: #F5F5F5;
   --theme-accent-color: #FFB300;
   --theme-substrate-background: var(--theme-background);
-  --theme-toggler-back: #1f61c5;
+  --theme-toggler-back: #42A5F5;
   --theme-techs-text-color: #424242;
   --theme-focus-color: #FFE082;
 }
