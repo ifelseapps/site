@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 themeTogglerCheckbox.addEventListener('change', function () {
   document.documentElement.classList.toggle('theme-dark');
 
+  // После переключения темы не нужно оставлять выделение данного контролла
+  this.blur();
+
   const blackTheme = customPropertiesSupports
     ? getComputedStyle(document.documentElement).getPropertyValue('--theme-background')
     : '';
