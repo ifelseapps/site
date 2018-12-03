@@ -26,7 +26,7 @@
           </span>
         </label>
       </header>
-      <main role="main">
+      <main>
         <section class="about-block page__section">
           <div class="about-block__photo">
             <img
@@ -65,7 +65,7 @@
             <div class="skills-block">
               <div class="skills-block__description">
                 <p>Мои самые сильные навыки&nbsp;&mdash; верстка и&nbsp;JavaScript (ES5/ES6).</p>
-                <p>Начинал верстать еще в&nbsp;эпоху табличной верстки. Есть опыт поддержки старых браузеров. Применяю на&nbsp;практике подходы <em>progressive enhancement</em> и&nbsp;<em>graceful degradation</em>. Умею декомпозировать интерфейс (разделение на&nbsp;блоки, пригодные для переиспользования).</p>
+                <p>Начинал верстать еще в&nbsp;эпоху табличной верстки. Есть опыт поддержки старых браузеров. Применяю на&nbsp;практике подходы <em>mobile first</em>, <em>progressive enhancement</em> и&nbsp;<em>graceful degradation</em>. Умею декомпозировать интерфейс (разделять на&nbsp;компоненты для повторного использования).</p>
                 <p>Мои профессионыльные интересы:</p>
                 <ul>
                   <li>Механизмы работы браузера и&nbsp;оптимизация клиентской части приложения</li>
@@ -137,5 +137,33 @@
     </symbol>
   </svg>
   <script src="assets/scripts.min.js"></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter48619130 = new Ya.Metrika({
+                    id:48619130,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/48619130" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 </body>
 </html>
