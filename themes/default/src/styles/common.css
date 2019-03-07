@@ -1,6 +1,6 @@
 html {
   font-family: 'PT Sans', Arial, sans-serif;
-  font-size: calc(16px + 0.25vw);
+  font-size: calc(15px + 0.20vw);
   line-height: 1.5em;
 }
 
@@ -34,6 +34,13 @@ p {
 	overflow: hidden;
 }
 
+.full-width {
+  margin-left: -5vw;
+  margin-right: -5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 .title {
   margin: 0;
   font-family: 'Fira Sans', Arial, sans-serif;
@@ -43,15 +50,15 @@ p {
 }
 
 .title--level-1 {
-  font-size: calc(16px + 2vw);
+  font-size: calc(15px + 2vw);
 }
 
 .title--level-2 {
-  font-size: calc(16px + 1vw);
+  font-size: calc(15px + 1vw);
 }
 
 .title--level-3 {
-  font-size: calc(16px + 0.5vw);
+  font-size: calc(15px + 0.5vw);
 }
 
 .link {
@@ -157,20 +164,104 @@ p {
   background: var(--theme-substrate-background);
 }
 
+.main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.80rem;
+  line-height: 1em;
+}
+
+.main-menu__link {
+  display: block;
+  position: relative;
+  padding: 0 0.5em;
+  line-height: 1.6em;
+  text-decoration: none;
+  color: var(--theme-link-color);
+  border-bottom: solid 1px #B3E5FC;
+}
+
+.main-menu__link--active {
+  font-weight: 700;
+}
+
+.main-menu__link:hover,
+.main-menu__link--active {
+  color: #FF5722;
+}
+
+.main-menu__link:hover::after,
+.main-menu__link--active::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #FF5722;
+}
+
+.important-info {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: #2E7D32;
+}
+
+.important-info__icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.7em;
+  fill: currentColor;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 60px;
+  border-bottom: solid 3px #E3E9ED;
+}
+
+.page-header__main {
+  display: flex;
+  align-items: flex-end;
 }
 
 .page-header__name {
   margin: 0;
+  font-family: 'Fira Sans', Arial, sans-serif;
   font-size: 1rem;
   line-height: 1em;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.page-header__menu {
+  display: none;
+  margin-left: 1.5em;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-header__menu {
+    display: block;
+  }
+}
+
+.page-header__important {
+  display: none;
+  margin-top: 0.3em;
+  margin-left: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-header__important {
+    display: flex;
+  }
 }
 
 .about-block {

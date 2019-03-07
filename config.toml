@@ -2,3 +2,10 @@ baseURL = "http://example.org/"
 languageCode = "ru"
 title = "My New Hugo Site"
 theme = "default"
+
+[menu]
+  [[menu.main]]
+    identifier = "main"
+    name = "Главная"
+    url = "/"
+    weight = 10
