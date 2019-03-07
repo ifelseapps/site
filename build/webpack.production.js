@@ -40,7 +40,7 @@ module.exports = merge([
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: `${themePath}/assets/styles.min.css`
+        filename: `../static/styles.min.css`
       })
     ],
     optimization: {

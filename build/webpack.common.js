@@ -7,6 +7,6 @@ module.exports = {
   entry: `${themePath}/src/bundle.js`,
   output: {
     filename: 'scripts.min.js',
-    path: path.resolve(__dirname, themePath, 'assets')
+    path: path.resolve(__dirname, '../', themePath, 'static')
   }
 };

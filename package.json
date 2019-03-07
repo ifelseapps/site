@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --config ./build/webpack.development.js --watch --mode=development --theme=default",
-    "build": "webpack --config ./build/webpack.production.js --watch --mode=production --theme=default"
+    "build": "webpack --config ./build/webpack.production.js --mode=production --theme=default"
   },
   "repository": {
     "type": "git",
