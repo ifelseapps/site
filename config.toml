@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "ru"
+title = "My New Hugo Site"
+theme = "default"
