@@ -46,12 +46,12 @@
 
 .theme-switcher__back::before {
   left: 4px;
-  background-image: url(/assets/images/sunny.svg);
+  background-image: url(/images/sunny.svg);
 }
 
 .theme-switcher__back::after {
   right: 4px;
-  background-image: url(/assets/images/moon.svg);
+  background-image: url(/images/moon.svg);
 }
 
 .theme-switcher__toggler {

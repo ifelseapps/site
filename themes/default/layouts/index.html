@@ -1,0 +1,96 @@
+{{ define "main" }}
+<section class="about-block page__section">
+  <div class="about-block__photo">
+    <img
+      class="picture"
+      srcset="/images/photo@1x.jpg 1x,
+              /images/photo@2x.jpg 2x"
+      src="/images/photo@1x.jpg"
+      alt="Моя фотография">
+  </div>
+  <div class="about-block__info">
+    <h2 class="title title--level-1 print-hidden">Давайте знакомиться</h2>
+    <p>Меня зовут Максим. Мне 29&nbsp;лет, я&nbsp;<strong>frontend-разработчик</strong>. Моя работа находится на&nbsp;пересечении программирования и&nbsp;дизайна. Люблю воплощать интересные идеи в&nbsp;жизнь с&nbsp;помощью кода. Мне нравится превращать статический макет в&nbsp;готовый продукт. Я&nbsp;всегда стараюсь создавать хорошо продуманные, доступные, оптимизированные интерфейсы, удобные для пользователя. Ведь любое приложение создается именно для пользователя, для решения той или иной его проблемы. У&nbsp;меня есть опыт работы fullstack разработчиком. Этот опыт дает мне понимание работы всего приложения, а&nbsp;не&nbsp;только его клиентской части. Ну&nbsp;и, разумеется, для моих личных проектов бэкенд я&nbsp;пишу сам.</p>
+    <p>В&nbsp;жизни я&nbsp;счастливый муж и&nbsp;отец. Я&nbsp;считаю, что классные продукты создаются именно счастливыми людьми. В&nbsp;свободное время люблю путешествовать вместе с&nbsp;моей семьей. У&nbsp;меня много интересов (как сказал один мой знакомый: &laquo;тебе интересно все&raquo;). Я&nbsp;изучаю иврит и&nbsp;английский. Интересуюсь историей, авиацией и&nbsp;много чем еще.</p>
+    <ul class="about-block__socials">
+      <li class="about-block__social">
+        <a class="button" href="https://github.com/ifelseapps" target="_blank" rel="noreferrer">
+          <svg class="button__icon">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+          Github
+        </a>
+      </li>
+      <li class="about-block__social">
+        <a class="button" href="https://twitter.com/ifelseapps" target="_blank" rel="noreferrer">
+          <svg class="button__icon">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+          Twitter
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="page__section">
+    <h2 class="title title--level-2">Навыки и технологии</h2>
+    <div class="skills-block">
+      <div class="skills-block__description">
+        <p>Мои самые сильные навыки&nbsp;&mdash; верстка и&nbsp;JavaScript (ES5/ES6).</p>
+        <p>Начинал верстать еще в&nbsp;эпоху табличной верстки. Есть опыт поддержки старых браузеров. Применяю на&nbsp;практике подходы <em>mobile first</em>, <em>progressive enhancement</em> и&nbsp;<em>graceful degradation</em>. Умею декомпозировать интерфейс (разделять на&nbsp;компоненты для повторного использования).</p>
+        <p>Мои профессионыльные интересы:</p>
+        <ul>
+          <li>Механизмы работы браузера и&nbsp;оптимизация клиентской части приложения</li>
+          <li>Анимации и&nbsp;их&nbsp;производительность</li>
+          <li>Доступность интерфейсов</li>
+          <li>Функциональное программирование</li>
+        </ul>
+      </div>
+      <div class="skills-block__techs">
+        <p class="skills-block__techs-title">Мой стек технологий и&nbsp;инструментов:</p>
+        <ul class="techs">
+          <li class="techs__item">JavaScript</li>
+          <li class="techs__item">TypeScript</li>
+          <li class="techs__item">React.js</li>
+          <li class="techs__item">Vue.js</li>
+          <li class="techs__item">jQuery</li>
+          <li class="techs__item">Html</li>
+          <li class="techs__item">Css</li>
+          <li class="techs__item">Pug</li>
+          <li class="techs__item">PostCSS</li>
+          <li class="techs__item">Sass</li>
+          <li class="techs__item">Less</li>
+          <li class="techs__item">Stylus</li>
+          <li class="techs__item">Webpack</li>
+          <li class="techs__item">Gulp</li>
+          <li class="techs__item">Svg</li>
+          <li class="techs__item">БЭМ</li>
+          <li class="techs__item">Css modules</li>
+          <li class="techs__item">Node.js</li>
+          <li class="techs__item">Express.js</li>
+          <li class="techs__item">Php</li>
+          <li class="techs__item">MySQL</li>
+          <li class="techs__item">Битрикс<span class="ref">*</span></li>
+          <li class="techs__item">Git</li>
+          <li class="techs__item">Linux</li>
+        </ul>
+        <div class="skills-block__notes">
+          <span class="ref">*</span> Я прошел <a href="https://dev.1c-bitrix.ru/learning/resume.php?ID=25945346-259043" class="link" target="_blank" rel="noreferrer">аттестацию</a> 1С-Битрикс
+        </div>
+      </div>
+    </div>
+</section>
+<section class="page__section">
+  <h2 class="title title--level-2">Заметки</h2>
+  <ul>
+    <li><a class="link" href="#">Управление CSS-анимациями</a></li>
+  </ul>
+</section>
+<section class="page__section page__section--full-width">
+  <h2 class="visually-hidden">Контактная информация</h2>
+  <div class="contacts-block">
+    <p>У&nbsp;Вас есть интересные проекты или идеи? Пишите, обсудим!</p>
+    <p><a class="link link--size-lg" href="mailto:hi@maximpavlov.su">hi@maximpavlov.su</a></p>
+  </div>
+</section>
+{{ end }}
