@@ -9,3 +9,11 @@ theme = "default"
     name = "Главная"
     url = "/"
     weight = 10
+  [[menu.main]]
+    identifier = "notes"
+    name = "Заметки"
+    url = "/notes/"
+    weight = 100
+
+[params]
+  important = "Пример текста для блока с важной информацией"

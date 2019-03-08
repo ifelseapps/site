@@ -1,6 +1,7 @@
 @import "styles/fonts.css";
 @import "styles/themes.css";
 @import "styles/common.css";
+@import "styles/layout.css";
 @import "styles/theme-switcher.css";
 @import "styles/techs.css";
 @import "styles/print.css";
