@@ -125,11 +125,6 @@
   border-bottom: solid 3px #E3E9ED;
 }
 
-.page-header__main {
-  display: flex;
-  align-items: flex-end;
-}
-
 .page-header__name {
   margin: 0;
   font-family: 'Fira Sans', Arial, sans-serif;
@@ -141,13 +136,18 @@
 }
 
 .page-header__menu {
-  display: none;
-  margin-left: 1.5em;
+  margin-top: 0.2em;
 }
 
 @media screen and (min-width: 1024px) {
+  .page-header__main {
+    display: flex;
+    align-items: flex-end;
+  }
+
   .page-header__menu {
-    display: block;
+    margin-top: 0;
+    margin-left: 1.5em;
   }
 }
 
