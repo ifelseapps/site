@@ -33,7 +33,7 @@ bower_components
 build/Release
 
 assets/scripts.min.js
-assets/styles.min.js
+assets/styles.min.css
 
 # Dependency directories
 node_modules/
