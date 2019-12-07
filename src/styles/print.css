@@ -74,31 +74,4 @@
     margin-top: 1em;
     margin-bottom: 1em;
   }
-
-  .about-block__photo {
-    margin-top: 0;
-    margin-bottom: 10px;
-    order: 0;
-  }
-
-  .about-block__photo img {
-    width: 150px;
-  }
-
-  .about-block__socials {
-    display: flex;
-  }
-
-  .about-block__social:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  .contacts-block {
-    padding-top: 0;
-    background: none;
-  }
-
-  .skills-block__notes {
-    color: var(--theme-text-color);
-  }
 }
